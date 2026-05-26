@@ -14,7 +14,7 @@ def main():
         return
 
     sections = tools.group_into_sections(lines)
-    raw_states = tools.get_section_data(sections, "[STATES]") =
+    raw_states = tools.get_section_data(sections, "[STATES]") 
     raw_funcs = tools.get_section_data(sections,"[FUNCTION]")
 
     initial_state = raw_states[0] if raw_states else None
