@@ -1,0 +1,47 @@
+[STATES]
+q0
+q1
+q2
+q3
+q4
+q5
+q6
+q7
+
+[ALPHABET]
+n
+s
+r
+l
+g
+u
+
+[FUNCTION]
+# Dorm to Hallway
+q0 n,e,e q1
+
+# Hallway connections
+q1 s,e,e q0
+q1 r,e,e q2
+q1 l,e,e q3
+q1 n,e,e q4
+
+# Library
+q2 g,e,B q2
+q2 l,e,e q1
+
+# Potions
+q3 g,e,P q3
+q3 r,e,e q1
+
+# THE FIRST OBSTACLE: The Iron Gate (requires Potion 'P')
+q4 u,P,e q5
+q4 s,e,e q1
+
+# THE COURTYARD: Walk North to the final barrier
+q5 n,e,e q6
+q5 s,e,e q4
+
+# THE SECOND OBSTACLE: The Magical Barrier (requires Book 'B')
+q6 u,B,e q7
+q6 s,e,e q5
