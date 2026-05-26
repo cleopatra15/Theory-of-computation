@@ -1,0 +1,22 @@
+[sigma]
+0
+1
+
+[stari]
+q0
+q1
+q2
+q3
+
+[stare initiala]
+q0
+
+[stare finala]
+q3
+
+[functie]
+(q0,0)-q0
+(q0,0)-q1
+(q0,1)-q0
+(q1,1)-q2
+(q2,ε)-q3
