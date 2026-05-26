@@ -1,0 +1,17 @@
+[STATES]
+q0
+q1
+
+[ALPHABET]
+a
+b
+
+[FUNCTION]
+# Format: Origin  Input,Pop,Push  Destination
+# pentru (a^n)(b^n)
+
+q0 a,ε,A q0
+
+q0 b,A,ε q1
+
+q1 b,A,ε q1
