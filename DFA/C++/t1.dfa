@@ -1,0 +1,21 @@
+[sigma]
+a
+b
+
+[stari]
+q0
+q1
+q2
+
+[stare initiala]
+q0
+
+[stare finala]
+q2
+
+[functie]
+(q0, a) - q1
+(q1, b) - q2
+(q0, b) - q0
+
+[end]
